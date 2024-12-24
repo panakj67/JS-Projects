@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+#main h1{
+    font-family: 'Bidena trial';
+    text-align: center;
+}
+
+hr{
+    height: 5px;
+    background-color: rgb(231, 233, 235);
+    border: none;
+}
+
+#catalog{
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.box{
+    padding: 20px;
+    max-width: 260px;
+    background-color: #f4f4f4;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.box h1{
+    font-size: 35px;
+}
+
+.box h4, .box p{
+    margin-top: 10px;
+}

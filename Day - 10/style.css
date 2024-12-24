@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Now Display';
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.bg{
+    height: 100%;
+    width: 100%;
+}
+
+.logo{
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    height: 37px;
+}
+
+.nav{
+    display: flex;
+    gap: 80px;
+    position: absolute;
+    top: 6%;
+    left: 35%;
+}
+
+.image{
+    position: absolute;
+    top: 0%;
+    left: 55%;
+    height: 100%;
+    width: 35%;
+    background: url(https://fuckingyoung.es/wp-content/uploads/2014/09/Bei-Kuo-SS15-Lookbook_fy12.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.btn{
+    height: 70px;
+    width: 70px;
+    background-color: red;
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    transform: translate(0 , -50%);
+    border-radius: 50%;
+    box-shadow: 0 20px 45px red;
+}
+
+.btn i{
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    color: #efe8e8;
+    transform: translate(-50% , -50%);
+}
+
+.content{
+    position: absolute;
+    bottom: 7%;
+    left: 4%;
+}
+
+.content .row{
+    display: flex;
+    font-size: 50px;
+}
+
+.row h1{
+    /* line-height: 1; */
+    font-weight: 200;
+}
+
+.r1{
+    gap: 70px;
+}
+
+.r2{
+    gap: 55px;
+}
+.panal{
+    position: absolute;
+    right: 0;
+    width: 9.98%;
+    height: 100%;
+}
+
+.panal .top{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-color: black;
+}
+
+.top i{
+    position: absolute;
+    left: 50%;
+    top: 14%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+
+.panal .btm{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-color: red;
+}
+
+.btm .rotated{
+    display: flex;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    gap: 30px;
+    color: #fff;
+    transform: translate(-50% , -50%) rotate(-90deg);
+}

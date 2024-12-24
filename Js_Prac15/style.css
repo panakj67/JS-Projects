@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d5d5d5;
+}
+
+#cross i{
+    font-size: 30px;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+#card{
+    height: 530px;
+    width: 350px;
+    border-radius: 6px;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#storyian{
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-bottom: 1px solid #c8c7c7;
+}
+
+#storyian::-webkit-scrollbar{
+    display: none;
+}
+
+.story{
+    height: 80px;
+    width: 80px;
+    margin-right: 4px;
+    padding: 2.4px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    background: linear-gradient(60deg, #FFC107, #FF5722, #E91E63, #9C27B0);
+}
+
+.story img{
+   height: 100%;
+   width: 100%;
+   background-color: antiquewhite;
+   border-radius: 50%;
+   border: 2px solid #fff;
+   object-fit: cover;
+}
+
+#storyImg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    padding: 20px 0;
+    background-color: #edecec;
+    /* display: flex; */
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    gap: 30px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: none;
+}
+
+.line{
+    height: 3px;
+    width: 2px;
+    background-color: #9C27B0;
+    position: fixed;
+    margin-top: -20px;
+    transition: all ease .5s;
+}
+
+.image{
+    overflow: hidden;
+}
+
+
+.image img{
+    height: 100%;
+    width: 100%;
+    background-color: #E91E63;
+    object-fit: cover;
+}
+
+.profile{
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.profile img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #d5d5d5;
+}
+
+.btm{
+    display: flex;
+    gap: 30px;
+    margin-top: -10px;
+    align-items: center;
+    padding: 5px 20px;
+    justify-content: space-between;
+}
+
+.red-fill{
+    fill: red;
+}
+
+.ri-heart-3-fill{
+    color: red;
+}
+
+.btm input{
+    width: 80%;
+    padding: 10px 12px;
+    background-color: transparent;
+    border: 1px solid #111;
+    border-radius: 40px;
+    outline: none;
+    font-size: 20px;
+}
+
+.btm div{
+    scale: 1.6;
+    cursor: pointer;
+}
+
+.btm div:active{
+    scale: 1.4;
+}

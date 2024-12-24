@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    font-size: clamp(14px, 1vw, 18px);
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 1vw 1vw;
+}
+
+.veiw{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 4vh;
+   padding-top: 15vh;
+}
+
+.veiw h1{
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 1;
+}
+.det{
+    text-align: center;
+    padding: 0 20vw;
+}
+
+.det p{
+    font-size: 1.1rem;
+}
+
+.buttons{
+    display: flex;
+    gap: 1.5vw;
+    margin-top: 2vh;
+}
+
+.buttons button{
+    background-color: black;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 1.2vh 1vw;
+    border-radius: .5vw;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+@media (max-width : 375px) {
+    .veiw{
+        padding: 12vw 1vw;
+        gap: 2rem;
+    }
+
+    .veiw h1 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .veiw p {
+        font-size: 1rem;
+        padding: 0;
+        opacity: 0.6;
+    }
+
+    .buttons button{
+        font-size: 1rem;
+        padding: 1.4vh 2.2vw;
+    }
+}

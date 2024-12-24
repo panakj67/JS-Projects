@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#car1{
+    position: absolute;
+    height: 140px;
+    width: 120px;
+    background-color: blue;
+}
+
+#car2{
+    position: absolute;
+    height: 120px;
+    width: 90px;
+    background-color: red;
+    /* background-color: rgba(0, 0, 0, 0.54); */
+}
+
+#car3{
+    position: absolute;
+    height: 110px;
+    width: 80px;
+    background: green;
+}
+
+#bg{
+    position: relative;
+    height: 180px;
+    width: 180px;
+    background-color: blueviolet;
+}
+
+#pod{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50% , 0%);
+    height: 70px;
+    width: 40px;
+    background-color: red;
+}

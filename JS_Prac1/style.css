@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: postmark;
+
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #ffffff;
+}
+
+h1{
+    font-size: 54px;
+}
+
+h2{
+    font-size: 50px;
+    padding: 4px 32px;
+    border-radius: 7px;
+    background-color: #c0baba;
+}
+
+button{
+    padding: 12px 18px;
+    background-color: aqua;
+    border: none;
+    font-size: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:active{
+    scale: 0.9;
+}

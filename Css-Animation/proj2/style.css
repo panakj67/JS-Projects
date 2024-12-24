@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Now Display';
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 18px 35px;
+    font-size: 30px;
+    font-weight: 500;
+    color: lightseagreen;
+    background-color: transparent;
+    border: 2px solid lightseagreen;
+}
+
+/* after/before - inline element (height or width prop does not apply to any inline element) */
+button::after{
+    content: ''; /* you can write anything you want to add before or after(But this is a virtual content) */
+    height: 100%;
+    width: 0%;
+    background-color: lightseagreen;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all ease .2s;
+}
+button:hover::after{
+   width: 100%;
+}
+
+button:hover{
+    color: #fff;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.nav h4{
+    font-size: 50px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+h4::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    background-color: red;
+    display: block;
+    transition: all ease 0.2s;
+}
+
+h4:hover::after{
+    width: 100%;
+}

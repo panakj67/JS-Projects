@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Now Display";
+}
+html, body {
+    min-height: 100vh;
+    width: 100%;
+}
+
+#main{
+    /* background-color: rgb(36, 36, 36); */
+    height: 100%;
+    width: 100%;
+}
+
+#vert-line{
+    position: absolute;
+    top: 19%;
+    right: 25%;
+    width: 1px;
+    height: 100%;
+    background-color: rgb(181, 178, 178);
+    z-index: 1;
+}
+
+#nav{
+    padding: 11px 28px;
+    display: flex;
+    color: #fff;
+    background-color: rgb(36, 36, 36);
+    align-items: center;
+    justify-content: space-between;
+}
+
+#left-nav{
+    display: flex;
+    width: 74%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#left-nav h4 :nth-child(1){
+    font-size: 20px;
+    font-weight: 300;
+    opacity: .8;
+}
+
+#nav h4{
+    font-size: 17px;
+    font-weight: 400;
+}
+
+#nav img{
+    height: 38px;
+}
+
+#nav #btn{
+   font-size: 15px;
+   padding: 8px 16px;
+   border: none;
+   outline: none;
+   border-radius: 20px;
+}
+
+#short{
+    padding: 15px 28px;
+}
+
+#short p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #66758C;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+#short hr{
+    opacity: .4;
+}
+
+.line-cont{
+   position: relative;
+}
+
+.btns {
+    position: absolute;      /* Allows buttons to appear on the line */
+    top: -18px;              /* Adjusts vertical position */
+    right: 0;                /* Aligns buttons to the right */
+    display: flex;           /* Ensures buttons are displayed side by side */
+    gap: 20px;                /* Adds spacing between the buttons */
+  }
+
+.btns button{
+    background-color: #fff;
+    padding:7px 12px;
+    border-radius: 5px;
+    border: 1px solid #66758C;
+}
+
+.btns button{
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+    opacity: .8;
+    color: #38393b;
+}
+
+.btns button:hover{
+    border: 1px solid black;
+}
+
+#content{
+    width: 100%;
+    display: flex;
+    /* background-color: #38393b; */
+    padding: 0px 28px;
+}
+
+#left{
+    width: 58%;
+}
+
+#top{
+    width: 100%;
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+#l-part{
+    width: 65%;
+    /* background-color: red; */
+}
+
+#l-part h1{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#l-part p{
+    font-size: 20px;
+    color: rgb(46, 46, 46);
+    line-height: 1.4;
+}
+
+#r-part{
+   margin-top: -20px;
+   width: 30%;
+   display: flex;
+   gap: 20px;
+   flex-direction: column;
+   /* background-color: green; */
+}
+
+#r-part button{
+    width: 78%;
+    padding: 8px 8px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+#r-part button:nth-child(1){
+    background-color: black;
+    color: white;
+}
+
+#btm{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.line{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.line button{
+   padding: 8px 10px;
+   border: 1px solid rgb(202, 191, 191);
+   border-radius: 6px;
+   font-size: 15px;
+   font-weight: 500;
+   cursor: pointer;
+   letter-spacing: 1px;
+   color: rgb(0, 0, 0);
+   background-color: #fff;
+   transition: all ease .5s;
+}
+
+.line button:hover{
+    border: 1px solid black;
+}
+
+.line p{
+    font-size: 11px;
+    font-weight: 600;
+    color: #38393b;
+}
+
+#btm .line-2{
+    gap: 40.5px;
+}
+
+#btm .line-2 button{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#btm .line-3{
+    gap: 30px;
+    color: royalblue;
+}
+#btm .line-4{
+    gap: 19px;
+}
+
+.line-2 #circle{
+    height: 17px;
+    width: 17px;
+    background-color: #02BC19;
+    border-radius: 100%;
+}
+
+#right{
+    width: 42%;
+    display: flex;
+    margin-top: 15px;
+    /* background-color: #02BC19; */
+    justify-content: space-between;
+}
+
+#right .image1{
+    width: 43%;
+    font-size: 15px;
+    cursor: pointer;
+    line-height: 1.4;
+    color: rgb(38, 37, 37);
+}
+#right .image2{
+    margin-top: 6px;
+    cursor: pointer;
+    border: 1px solid rgb(209, 206, 206);
+    border-radius: 10px;
+    width: 50.4%;
+}
+#right .image2 p{
+    padding: 14px 10px;
+    font-size: 16px;
+    letter-spacing: .8px;
+    line-height: 1.4;
+}
+
+#right .image1 img{
+    height: 225px;
+    border-radius: 10px;
+} 
+#right .image2 img{
+    height: 258px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#nav-2{
+    padding: 4px 28px;
+}
+
+#nav-det{
+    padding: 10px;
+    display: flex;
+    gap: 58px;
+}
+
+#nav-det h4{
+    font-size: 15px;
+    font-weight: 600;
+    color: #393a3a;
+}
+#hz-line{
+    width: 73%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+}
+
+#nav-2 #image img{
+    width: 73%;
+}

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica now display;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: aqua;
+}
+
+#box{
+    padding: 30px;
+    /* height: 300px; */
+    width: 210px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#box h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#box p{
+    margin-top: 20px;
+}

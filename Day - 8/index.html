@@ -1,0 +1,35 @@
+<!-- 1). we have 3 cars car1, car2 and car3(c1 <- c2 <- c3) if we give position absolute to any of the car let say(car1)
+then the car1 lifts up to a layer(say layer 1) and the vaccant space is taken by the remaining car
+if we apply position absolute to car2 then car2 lifts up to a upper layer than layer1(say layer2)
+and the vacc space is taken by car3, and if we apply position absolute to car3 then it lifts upto the top layer(say layer3)
+
+---------- : layer3
+---------- : layer2
+---------- : layer1
+
+2). when we provide css property (position) to any element then 5 properties (left, right, top, bottom, z-index)
+is activated, for any css property element takes the space from top-left corner so we apply
+transform translate(-50% ,-50%) means shifting 50% width to left and 50% height ro up
+
+By default the z-index is 1, it can have value upto 999999999, the greater z-index have upper layer
+
+3). lets suppose we have a div (say bg) and we have another div (say pod) inside it so the pod div can move to anywhere inside
+the parent div but if apply position absolute to it, now it can move anywhere on the screen but if we want to lift the pod div
+but we restrict it inside the parent div then we have to apply position relative to parent div -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- <div id="car1"></div>
+     <div id="car2"></div>
+     <div id="car3"></div> -->
+     <div id="bg">
+        <div id="pod"></div>
+     </div>
+</body>
+</html>

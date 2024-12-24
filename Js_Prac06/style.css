@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica now display';
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+}
+
+#cursor{
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+}
+
+h1{
+    font-size: 138px;
+    color: #fff;
+    mix-blend-mode: difference;
+}
